@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Status do Pedido - Domino's Pizza</title>
     <link rel="stylesheet" href="status.css">
 </head>
+
 <body>
     <div class="status-container">
-        <!-- Header -->
+
         <header class="header">
             <h1>Status do Pedido</h1>
             <button class="logout-btn" onclick="logout()">Sair</button>
         </header>
 
         <div class="content-wrapper">
-            <!-- Sucesso -->
+
             <div class="success-card">
                 <div class="success-icon">✓</div>
                 <h2>Pedido Confirmado!</h2>
@@ -23,7 +25,7 @@
                 <div class="order-id">Pedido #<span id="orderId"></span></div>
             </div>
 
-            <!-- Status do Pedido -->
+
             <div class="card">
                 <h3>Acompanhe seu Pedido</h3>
                 <div class="status-timeline">
@@ -74,22 +76,39 @@
                 </div>
             </div>
 
-            <!-- Detalhes do Pedido -->
+
             <div class="card">
                 <h3>Detalhes do Pedido</h3>
                 <div id="orderDetails" class="order-details">
-                    <!-- Preenchido via JavaScript -->
+
                 </div>
             </div>
 
-            <!-- Ações -->
+
             <div class="actions">
                 <button class="btn-secondary" onclick="goHome()">Voltar ao Início</button>
                 <button class="btn-primary" onclick="newOrder()">Fazer Novo Pedido</button>
+            </div>
+
+            <div id="loadingScreen" class="loading-screen hidden">
+
+                <div class="pizza-icon">🍕</div>
+
+                <div class="loading-bars">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <p id="loadingMessage">Autenticando...</p>
+
             </div>
         </div>
     </div>
 
     <script src="status.js"></script>
 </body>
+
 </html>

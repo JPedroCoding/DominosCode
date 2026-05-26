@@ -4,27 +4,27 @@ function selectRole(role) {
     selectedRole = role;
     
     if (role === 'customer') {
-        // Cliente entra direto
+        
         showLoading('Acessando área do cliente...');
         setTimeout(() => {
             localStorage.setItem('userRole', 'customer');
             window.location.href = 'menu.html';
         }, 2000);
     } else {
-        // Garçom e Cozinha precisam fazer login
+        
         showLoginForm(role);
     }
 }
 
 function showLoginForm(role) {
-    // Esconder seleção de role
+    
     document.getElementById('roleSelection').classList.add('hidden');
     
-    // Mostrar formulário de login
+    
     const loginForm = document.getElementById('loginForm');
     loginForm.classList.remove('hidden');
     
-    // Configurar ícone e título baseado no role
+    
     const formIcon = document.getElementById('formIcon');
     const formTitle = document.getElementById('formTitle');
     
@@ -38,16 +38,16 @@ function showLoginForm(role) {
         formTitle.textContent = 'Login como Cozinha';
     }
     
-    // Limpar campos
+    
     document.getElementById('email').value = '';
     document.getElementById('password').value = '';
 }
 
 function backToRoleSelection() {
-    // Esconder formulário
+    
     document.getElementById('loginForm').classList.add('hidden');
     
-    // Mostrar seleção de role
+    
     document.getElementById('roleSelection').classList.remove('hidden');
     
     selectedRole = null;

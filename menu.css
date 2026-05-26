@@ -24,9 +24,35 @@ body {
     align-items: center;
 }
 
-.header h1 {
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-badge {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-icon {
+    width: 60px;
+    height: 60px;
+    background: #E31837;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 30px;
+}
+
+.logo-badge h1 {
     color: #0052A3;
-    font-size: 24px;
+    font-size: 32px;
+    font-weight: bold;
 }
 
 .logout-btn {
@@ -38,6 +64,12 @@ body {
     cursor: pointer;
     font-weight: bold;
     transition: background 0.3s;
+}
+
+.mp {
+    color: #0052A3;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .logout-btn:hover {
@@ -179,7 +211,7 @@ body {
     font-size: 14px;
 }
 
-/* Flavors */
+
 .half-half-option {
     margin-bottom: 20px;
     padding: 15px;

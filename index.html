@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Domino's Pizza - Login</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="login-container">
         <div class="login-wrapper">
-            <!-- Logo Header -->
+
             <div class="logo-header">
                 <div class="logo-badge">
                     <div class="logo-icon">🍕</div>
@@ -18,7 +20,6 @@
                 <p class="subtitle">Sistema de Comanda Digital</p>
             </div>
 
-            <!-- Role Selection -->
             <div id="roleSelection" class="role-grid">
                 <div class="role-card" onclick="selectRole('customer')">
                     <div class="role-icon-bg customer-bg">
@@ -48,11 +49,10 @@
                 </div>
             </div>
 
-            <!-- Login Form (hidden initially) -->
             <div id="loginForm" class="login-form hidden">
                 <div class="form-card">
                     <button class="back-button" onclick="backToRoleSelection()">← Voltar</button>
-                    
+
                     <div class="form-header">
                         <div class="form-icon" id="formIcon"></div>
                         <h2 id="formTitle">Login</h2>
@@ -62,27 +62,17 @@
                     <form onsubmit="handleLogin(event)">
                         <div class="form-group">
                             <label for="email">E-mail</label>
-                            <input 
-                                type="email" 
-                                id="email" 
-                                placeholder="seu@email.com" 
-                                required
-                            >
+                            <input type="email" id="email" placeholder="seu@email.com" required>
                         </div>
 
                         <div class="form-group">
                             <label for="password">Senha</label>
-                            <input 
-                                type="password" 
-                                id="password" 
-                                placeholder="••••••••" 
-                                required
-                            >
+                            <input type="password" id="password" placeholder="••••••••" required>
                         </div>
 
                         <a href="#" class="forgot-password">Esqueci minha senha</a>
 
-                        <button  type="submit" class="submit-btn">
+                        <button type="submit" class="submit-btn">
                             Entrar →
                         </button>
                     </form>
@@ -95,14 +85,25 @@
                 </div>
             </div>
 
-            <!-- Loading Screen -->
             <div id="loadingScreen" class="loading-screen hidden">
-                <div class="spinner"></div>
+
+                <div class="pizza-icon">🍕</div>
+
+                <div class="loading-bars">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
                 <p id="loadingMessage">Autenticando...</p>
+
             </div>
         </div>
     </div>
 
     <script src="login.js"></script>
 </body>
+
 </html>

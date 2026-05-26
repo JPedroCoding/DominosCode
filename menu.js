@@ -29,12 +29,12 @@ const crustLabels = {
 };
 
 const pizzaFlavors = [
-    { id: 1, name: 'Pepperoni', description: 'Molho, mussarela e pepperoni', price: 45, image: 'https://via.placeholder.com/300x200/E31837/FFFFFF?text=Pepperoni' },
-    { id: 2, name: 'Margherita', description: 'Molho, mussarela, tomate e manjericão', price: 40, image: 'https://via.placeholder.com/300x200/10b981/FFFFFF?text=Margherita' },
-    { id: 3, name: 'Quatro Queijos', description: 'Mussarela, provolone, gorgonzola e parmesão', price: 48, image: 'https://via.placeholder.com/300x200/f59e0b/FFFFFF?text=4+Queijos' },
-    { id: 4, name: 'Calabresa', description: 'Molho, mussarela e calabresa', price: 42, image: 'https://via.placeholder.com/300x200/ef4444/FFFFFF?text=Calabresa' },
-    { id: 5, name: 'Frango Catupiry', description: 'Frango desfiado com catupiry', price: 44, image: 'https://via.placeholder.com/300x200/8b5cf6/FFFFFF?text=Frango' },
-    { id: 6, name: 'Portuguesa', description: 'Presunto, ovos, cebola e azeitonas', price: 46, image: 'https://via.placeholder.com/300x200/0052A3/FFFFFF?text=Portuguesa' }
+    { id: 1, name: 'Pepperoni', description: 'Molho, Mussarela e Pepperoni', price: 45, image: './assets/peperoni.png' },
+    { id: 2, name: 'Marguerita', description: 'Molho, Mussarela, Tomate e Manjericão', price: 40, image: './assets/marguerita.png' },
+    { id: 3, name: 'Quatro Queijos', description: 'Mussarela, Provolone, Gorgonzola e Parmesão', price: 48, image: './assets/quatroqueijos.png' },
+    { id: 4, name: 'Calabresa', description: 'Molho, Mussarela e Calabresa', price: 42, image: './assets/calabresa.png' },
+    { id: 5, name: 'Frango Catupiry', description: 'Frango Desfiado com Catupiry', price: 44, image: './assets/frango.png' },
+    { id: 6, name: 'Portuguesa', description: 'Presunto, Ovos, Cebola e Azeitonas', price: 46, image: './assets/portuguesa.png' }
 ];
 
 const availableDrinks = [

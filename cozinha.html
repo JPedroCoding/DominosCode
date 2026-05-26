@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="cozinha.css">
+  <title>Painel da Cozinha</title>
+</head>
+
+<body>
+
+  <main class="conteudo-principal-fixo">
+
+    <header class="navbar">
+      <div class="header-left">
+        <div class="logo-badge">
+          <div class="logo-icon">🍕</div>
+          <div class="title-area">
+            <h1>Domino's Pizza</h1>
+            <p class="mp">Painel do Garçom</p>
+          </div>
+        </div>
+      </div>
+      <div class="actions-section">
+        <button class="logout-btn">
+          <span>Sair</span>
+        </button>
+      </div>
+    </header>
+
+    <div class="centralizador">
+      <div class="dashboard-cards">
+
+        <div class="container-novos-pedidos">
+          <p>Novos Pedidos</p>
+          <h2>0</h2>
+          <div class="icon">
+            <img src="./assets/chef vermelho.png" width="60" alt="Logo Mesas Azul">
+          </div>
+        </div>
+
+        <div class="container-em-preparo">
+          <p>Em Preparo</p>
+          <h2>0</h2>
+          <div class="icon">
+            <img src="./assets/relogio laranja.png" alt="Logo Mesas Ocupadas Laranja" width="60">
+          </div>
+        </div>
+
+        <div class="container-prontos">
+          <p>Prontos</p>
+          <h2>0</h2>
+          <div class="icon">
+            <img src="./assets/check verde.png" alt="Logo Pagamento Vermelho" width="65">
+          </div>
+        </div>
+
+        <div class="container-atrasados">
+          <p>Pedidos Atrasados</p>
+          <h2>0</h2>
+          <div class="icon">
+            <img src="./assets/alerta amarelo.png" alt="" >
+          </div>
+        </div>
+      </div>
+
+      <div class="barra-filtro">
+        <img src="./assets/filtro.png" width="25" alt="filter--v1" />
+        <button class="botao-todos">Todos (0)</button>
+        <button class="botao-novos">Novos (0)</button>
+        <button class="botao-preparando">Preparando (0)</button>
+      </div>
+
+      <div class="card-vazio">
+        <img src="./assets/check verde.png" width="120" alt="filter--v1" />
+        <p class="nenhum-pendente">Nenhum pedido pendente!</p>
+        <p class="organizar-cozinha">Aproveite para organizar a cozinha</p>
+      </div>

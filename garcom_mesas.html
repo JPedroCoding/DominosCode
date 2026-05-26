@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="garcom_mesas.css">
+  <title>Painel do Garçom</title>
+</head>
+
+<body>
+
+  <main class="conteudo-principal-fixo">
+
+    <header class="navbar">
+      <div class="header-left">
+        <div class="logo-badge">
+          <div class="logo-icon">🍕</div>
+          <div class="title-area">
+            <h1>Domino's Pizza</h1>
+            <p class="mp">Painel do Garçom</p>
+          </div>
+        </div>
+      </div>
+      <div class="actions-section">
+        <button class="logout-btn">
+          <span>Sair</span>
+        </button>
+      </div>
+    </header>
+
+    <div class="centralizador">
+      <div class="dashboard-cards">
+
+        <div class="container-mesas">
+          <p>Total de Mesas</p>
+          <h2>5</h2>
+          <div class="icon">
+            <img src="./assets/pessoa azul.png" width="50" alt="Logo Mesas Azul">
+          </div>
+        </div>
+
+        <div class="container-mesas-ocupadas">
+          <p>Mesas Ocupadas</p>
+          <h2>0</h2>
+          <div class="icon">
+            <img src="./assets/pessoa laranja.png" alt="Logo Mesas Ocupadas Laranja" width="60">
+          </div>
+        </div>
+
+        <div class="container-mesas-pagamento">
+          <p>Aguardando
+          <p>Pagamento</p>
+          </p>
+          <h2>0</h2>
+          <div class="icon">
+            <img src="./assets/logo pagamento vermelho.png" alt="Logo Pagamento Vermelho" width="50">
+          </div>
+        </div>
+
+        <div class="container-mesas-pedidos">
+          <p>Pedidos Ativos</p>
+          <h2>0</h2>
+          <div class="icon">
+            <img src="./assets/relogio verde.png" alt="">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="secao-mesas">
+
+      <div class="abas-navegacao">
+        <button class="aba-mesas">Mesas</button>
+        <button class="aba-pedidos">Pedidos</button>
+      </div>
+
+      <div class="barra-filtros">
+        <div class="campo-busca">
+          <i class="icon-search"><img src="https://img.icons8.com/fluency-systems-regular/48/search--v1.png" width="20"
+              alt="Pesquisa"></i> <input type="text" placeholder="Buscar mesa...">
+        </div>
+        <div class="botoes-filtro"></div>
+        <button class="btn-filtro active">Todas</button>
+        <button class="btn-filtro verde">Livres</button>
+        <button class="btn-filtro laranja">Preparo</button>
+        <button class="btn-filtro vermelho">Pagamento</button>
+      </div>
+
+
+      <div class="container-grid-mesas">
+
+        <div class="bloco-card-mesa">
+          <div class="bola-cinza-mesa">
+            <span class="texto-numero-mesa">1</span>
+            <span class="status-bolinha-verde"></span>
+          </div>
+          <p class="nome-texto-mesa">Mesa 1</p>
+          <span class="etiqueta-status-livre">Livre</span>
+        </div>
+
+        <div class="bloco-card-mesa">
+          <div class="bola-cinza-mesa">
+            <span class="texto-numero-mesa">2</span>
+            <span class="status-bolinha-verde"></span>
+          </div>
+          <p class="nome-texto-mesa">Mesa 2</p>
+          <span class="etiqueta-status-livre">Livre</span>
+        </div>
+
+        <div class="bloco-card-mesa">
+          <div class="bola-cinza-mesa">
+            <span class="texto-numero-mesa">3</span>
+            <span class="status-bolinha-verde"></span>
+          </div>
+          <p class="nome-texto-mesa">Mesa 3</p>
+          <span class="etiqueta-status-livre">Livre</span>
+        </div>
+
+        <div class="bloco-card-mesa">
+          <div class="bola-cinza-mesa">
+            <span class="texto-numero-mesa">4</span>
+            <span class="status-bolinha-verde"></span>
+          </div>
+          <p class="nome-texto-mesa">Mesa 4</p>
+          <span class="etiqueta-status-livre">Livre</span>
+        </div>
+
+        <div class="bloco-card-mesa">
+          <div class="bola-cinza-mesa">
+            <span class="texto-numero-mesa">5</span>
+            <span class="status-bolinha-verde"></span>
+          </div>
+          <p class="nome-texto-mesa">Mesa 5</p>
+          <span class="etiqueta-status-livre">Livre</span>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+</body>
+
+</html>
