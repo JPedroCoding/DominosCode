@@ -61,7 +61,7 @@ function handleLogin(event) {
 
     console.log(email, senha);
 
-    fetch("http://localhost:3000/login", {
+    fetch("https://dominoscode-backend.onrender.com/login", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -105,14 +105,13 @@ function authenticateUser() {
     
 
     setTimeout(() => {
-        localStorage.setItem('userRole', selectedRole);
-        
-        
-        if (selectedRole === 'waiter') {
-            window.location.href = 'waiter.html';
-        } else if (selectedRole === 'kitchen') {
-            window.location.href = 'kitchen.html';
-        }
+    localStorage.setItem('userRole', selectedRole);
+    
+    if (selectedRole === 'waiter') {
+        window.location.href = 'garcom_mesas.html';  // 👈 muda aqui
+    } else if (selectedRole === 'kitchen') {
+        window.location.href = 'cozinha.html';  // 👈 e aqui
+    }
     }, 2000);
 }
 
