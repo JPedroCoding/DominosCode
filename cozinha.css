@@ -115,6 +115,8 @@ main {
     cursor: pointer;
     font-weight: bold;
     transition: background 0.3s;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .logout-btn:hover {

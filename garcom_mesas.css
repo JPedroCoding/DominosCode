@@ -114,6 +114,8 @@ main {
     cursor: pointer;
     font-weight: bold;
     transition: background 0.3s;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .logout-btn:hover {
@@ -308,6 +310,7 @@ main {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   width: auto;
   display: inline-block;
+  text-decoration: none;
 }
 
 .aba-pedidos {
@@ -323,6 +326,7 @@ main {
   cursor: pointer;
   width: auto;
   display: inline-block;
+  text-decoration: none;
 }
 
 .barra-filtros {
